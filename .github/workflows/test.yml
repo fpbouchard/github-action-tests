@@ -1,0 +1,13 @@
+name: GitHub Action test
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, edited, reopened, closed, synchronize]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $GITHUB_EVENT_NAME
