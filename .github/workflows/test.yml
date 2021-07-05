@@ -5,6 +5,10 @@ on:
       - master
   pull_request:
     types: [opened, edited, reopened, closed, synchronize]
+  check_suite:
+    types:
+      - completed
+  status: {}
 
 jobs:
   echo:
